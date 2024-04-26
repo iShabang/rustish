@@ -6,6 +6,7 @@
 #include <exception>
 #include <iostream>
 
+namespace rustish {
 namespace option {
 struct None {};
 
@@ -238,5 +239,6 @@ template <typename T> inline Option<T> Some(T &&val) {
 }
 
 } // namespace option
+} // namespace rustish
 
 #endif //_RUSTISH_OPTION_OPTION_HPP_

@@ -2,7 +2,7 @@
 
 #include "option/Option.hpp"
 
-using namespace option;
+using namespace rustish::option;
 
 TEST_CASE("Initialize Option with None structure", "[const-ref]") {
     Option<const int &> opt = None();

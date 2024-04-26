@@ -4,6 +4,7 @@
 #include <type_traits>
 #include <utility>
 
+namespace rustish {
 namespace option {
 
 template <typename T, typename U> struct IsSameDecayType {
@@ -169,5 +170,5 @@ template <typename T> class OptionStorage<const T &> {
     const T *m_ptr;
 };
 } // namespace option
-
+} // namespace rustish
 #endif //_RUSTISH_OPTION_OPTION_STORAGE_HPP_
